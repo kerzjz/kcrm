@@ -1,0 +1,44 @@
+{
+  "customer_stage_options": ["初次接触", "已跟进", "方案发送", "谈判中", "已成交", "已流失"],
+  "follow_type_options": ["电话", "微信", "上门", "线上会议"],
+  "customer_table_columns": [
+    {"field":"id","label":"ID","width":45,"visible":true},
+    {"field":"name","label":"企业名称","width":220,"visible":true},
+    {"field":"legal_person","label":"法人","width":110,"visible":true},
+    {"field":"phone","label":"联系方式","width":130,"visible":true},
+    {"field":"address","label":"地址","width":260,"visible":true},
+    {"field":"stage","label":"客户阶段","width":110,"visible":true},
+    {"field":"tags","label":"标签","width":120,"visible":true},
+    {"field":"last_date","label":"最后回访日期","width":110,"visible":true},
+    {"field":"last_remark","label":"最后回访情况","width":200,"visible":true}
+  ],
+  "customer_detail_fields": [
+    {"field":"id","label":"ID","visible":true},
+    {"field":"name","label":"企业名称","visible":true},
+    {"field":"legal_person","label":"法人","visible":true},
+    {"field":"phone","label":"电话","visible":true},
+    {"field":"address","label":"地址","visible":true},
+    {"field":"stage","label":"阶段","visible":true},
+    {"field":"tags","label":"标签","visible":true},
+    {"field":"business_scope","label":"经营范围","visible":true},
+    {"field":"registered_cap","label":"注册资本","visible":true},
+    {"field":"remark","label":"内部备注","visible":true}
+  ],
+  "follow_log_table_columns": [
+    {"field":"log_id","label":"日志ID","width":60,"visible":true},
+    {"field":"cust_id","label":"客户ID","width":70,"visible":true},
+    {"field":"cust_name","label":"客户名称","width":180,"visible":true},
+    {"field":"follow_type","label":"跟进方式","width":100,"visible":true},
+    {"field":"follow_date","label":"跟进日期","width":110,"visible":true},
+    {"field":"next_remind","label":"下次回访","width":110,"visible":true},
+    {"field":"remark","label":"备注","width":350,"visible":true}
+  ],
+  "search_db_fields": ["name","legal_person","phone"],
+  "csv_import_mapping":{
+    "名称":"name",
+    "法人":"legal_person",
+    "联系方式":"phone",
+    "地址":"address"
+  },
+  "csv_export_order":["id","name","legal_person","phone","address","stage","tags"]
+}
